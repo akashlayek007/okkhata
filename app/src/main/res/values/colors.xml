@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_green">#16A36A</color>
+    <color name="primary_green_dark">#118456</color>
+    <color name="primary_green_soft">#E8F7F0</color>
+    <color name="background_page">#F7F8FA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="surface_subtle">#F1F3F5</color>
+    <color name="text_primary">#202124</color>
+    <color name="text_secondary">#777777</color>
+    <color name="positive_amount">#16A36A</color>
+    <color name="positive_soft">#E8F7F0</color>
+    <color name="negative_amount">#E05252</color>
+    <color name="negative_soft">#FDECEC</color>
+    <color name="border_subtle">#EEEEEE</color>
+    <color name="warning_amber">#D97706</color>
+    <color name="warning_soft">#FEF3C7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

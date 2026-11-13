@@ -1,0 +1,80 @@
+{
+  "entities": {
+    "Customer": {
+      "title": "Customer",
+      "description": "A customer entry in the owner's personal ledger.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the customer (1 to 100 characters)."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Optional phone number of the customer (up to 20 characters)."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the customer was created (FieldValue.serverTimestamp())."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the customer was last updated (FieldValue.serverTimestamp())."
+        }
+      },
+      "required": ["name", "createdAt", "updatedAt"]
+    },
+    "LedgerTransaction": {
+      "title": "LedgerTransaction",
+      "description": "A credit or payment transaction recorded for a customer, stored in integer paise.",
+      "type": "object",
+      "properties": {
+        "customerId": {
+          "type": "string",
+          "description": "Document ID of the associated customer under the same user."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["CREDIT", "PAYMENT"],
+          "description": "Transaction direction: CREDIT (you gave) or PAYMENT (you got)."
+        },
+        "amount": {
+          "type": "integer",
+          "description": "Positive monetary amount in minor currency units (paise)."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional transaction description or memo (up to 300 characters)."
+        },
+        "transactionDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp representing when the transaction occurred."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the record was created (FieldValue.serverTimestamp())."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the record was last updated (FieldValue.serverTimestamp())."
+        }
+      },
+      "required": ["customerId", "type", "amount", "transactionDate", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/customers/{customerId}": {
+      "schema": { "$ref": "#/entities/Customer" },
+      "description": "Customer records owned by an authenticated user."
+    },
+    "/users/{userId}/transactions/{transactionId}": {
+      "schema": { "$ref": "#/entities/LedgerTransaction" },
+      "description": "Credit and payment transactions owned by an authenticated user."
+    }
+  }
+}

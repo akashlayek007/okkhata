@@ -1,0 +1,6 @@
+{
+  "name": "Simple Khata",
+  "description": "A lightweight personal digital ledger (Khata) app for tracking customer credits, payments, and balances with Firebase cloud sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

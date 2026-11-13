@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_edit_customer_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_page"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/card_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/desc_back"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="@string/title_add_customer"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_delete_customer_top"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/desc_delete_customer"
+            android:padding="12dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone"
+            app:tint="@color/negative_amount" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_subtle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_md">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.SimpleKhata.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_customer_name"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_customer_name"
+                        app:boxCornerRadiusBottomEnd="@dimen/button_radius"
+                        app:boxCornerRadiusBottomStart="@dimen/button_radius"
+                        app:boxCornerRadiusTopEnd="@dimen/button_radius"
+                        app:boxCornerRadiusTopStart="@dimen/button_radius">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_customer_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName|textCapWords"
+                            android:maxLength="100"
+                            android:maxLines="1"
+                            android:textColor="@color/text_primary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_customer_phone"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        android:hint="@string/label_customer_phone"
+                        app:boxCornerRadiusBottomEnd="@dimen/button_radius"
+                        app:boxCornerRadiusBottomStart="@dimen/button_radius"
+                        app:boxCornerRadiusTopEnd="@dimen/button_radius"
+                        app:boxCornerRadiusTopStart="@dimen/button_radius"
+                        app:startIconDrawable="@drawable/ic_phone"
+                        app:startIconTint="@color/text_secondary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_customer_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:textColor="@color/text_primary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_contact"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:text="@string/action_pick_from_contacts"
+                        android:textAllCaps="false"
+                        android:textColor="@color/primary_green"
+                        android:textSize="14sp"
+                        app:cornerRadius="@dimen/button_radius"
+                        app:icon="@drawable/ic_contacts"
+                        app:iconGravity="textStart"
+                        app:iconTint="@color/primary_green"
+                        app:strokeColor="@color/border_subtle" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save_customer"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:backgroundTint="@color/primary_green"
+                android:text="@string/btn_save_customer"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/button_radius" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel_customer"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/spacing_sm"
+                android:text="@string/btn_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                app:cornerRadius="@dimen/button_radius"
+                app:strokeColor="@color/border_subtle" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/primary_green" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

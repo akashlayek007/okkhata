@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SimpleKhata" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_green_soft</item>
+        <item name="colorOnPrimaryContainer">@color/primary_green_dark</item>
+        <item name="colorSecondary">@color/primary_green</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/background_page</item>
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/border_subtle</item>
+        <item name="colorError">@color/negative_amount</item>
+        <item name="android:windowBackground">@color/background_page</item>
+        <item name="android:statusBarColor">@color/background_page</item>
+        <item name="android:navigationBarColor">@color/card_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Widget.SimpleKhata.Card" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="strokeColor">@color/border_subtle</item>
+        <item name="strokeWidth">@dimen/card_stroke_width</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+</resources>

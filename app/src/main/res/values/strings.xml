@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simple Khata</string>
+    <string name="app_tagline">Clean, reliable personal ledger</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_customers">Customers</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Auth -->
+    <string name="auth_title">Welcome to Simple Khata</string>
+    <string name="auth_subtitle">Keep track of customer credits and payments with automatic cloud backup.</string>
+    <string name="auth_sign_in_google">Sign in with Google</string>
+    <string name="auth_continue_without_login">Continue without login</string>
+    <string name="auth_signing_in">Signing in…</string>
+    <string name="auth_privacy_note">Sign in with Google for automatic cloud backup, or continue without login to store records on this device only.</string>
+    <string name="auth_error_missing_config">Google Sign-In configuration missing.</string>
+    <string name="auth_error_generic">Could not complete sign-in. Please try again.</string>
+
+    <!-- Home Dashboard -->
+    <string name="home_welcome_default">Personal Ledger</string>
+    <string name="home_welcome_named">Hello, %1$s</string>
+    <string name="home_settings_desc">Open Settings</string>
+    <string name="stat_net_balance">Net Balance</string>
+    <string name="net_balance_receivable">You will get</string>
+    <string name="net_balance_advance">Advance balance</string>
+    <string name="net_balance_settled">All settled</string>
+    <string name="stat_total_receivable">Total Receivable</string>
+    <string name="stat_total_received">Total Received</string>
+    <string name="stat_total_customers">Total Customers</string>
+    <string name="quick_actions_title">Quick Actions</string>
+    <string name="action_add_customer">Add Customer</string>
+    <string name="action_add_customer_subtitle">Create new ledger</string>
+    <string name="action_add_transaction">Add Transaction</string>
+    <string name="action_add_transaction_subtitle">Credit or payment</string>
+    <string name="recent_activity_title">Recent Activity</string>
+    <string name="home_view_customers">All Customers</string>
+    <string name="empty_recent_activity">No transactions recorded yet.\nAdd a customer to begin.</string>
+
+    <plurals name="home_customers_count">
+        <item quantity="one">%d Customer</item>
+        <item quantity="other">%d Customers</item>
+    </plurals>
+
+    <!-- Customers -->
+    <string name="customers_title">Customers</string>
+    <string name="search_customers_hint">Search by name or phone</string>
+    <string name="empty_customers">You haven\'t added any customers yet.</string>
+    <string name="empty_customers_cta">Add First Customer</string>
+    <string name="empty_search_customers">No customers found.</string>
+    <string name="no_phone_number">No phone number</string>
+    <string name="balance_due_label">Due</string>
+    <string name="balance_advance_label">Advance</string>
+    <string name="balance_settled_label">Settled</string>
+
+    <!-- Add / Edit Customer -->
+    <string name="title_add_customer">Add Customer</string>
+    <string name="title_edit_customer">Edit Customer</string>
+    <string name="label_customer_name">Customer Name *</string>
+    <string name="label_customer_phone">Phone Number (Optional)</string>
+    <string name="action_pick_from_contacts">Select from Contacts</string>
+    <string name="msg_no_contacts_app">No contacts app found on this device.</string>
+    <string name="msg_contact_read_failed">Could not read the selected contact.</string>
+    <string name="msg_contact_no_phone">The selected contact does not have a phone number.</string>
+    <string name="btn_save_customer">Save Customer</string>
+    <string name="btn_update_customer">Update Customer</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="error_empty_name">Please enter a customer name.</string>
+    <string name="error_name_too_long">Name must be 100 characters or fewer.</string>
+    <string name="error_invalid_phone">Enter a valid phone number (7–15 digits).</string>
+    <string name="msg_customer_saved">Customer saved.</string>
+    <string name="msg_customer_updated">Customer updated.</string>
+    <string name="msg_customer_deleted">Customer deleted.</string>
+    <string name="dialog_delete_customer_title">Delete Customer?</string>
+    <string name="dialog_delete_customer_msg_no_tx">Are you sure you want to delete %1$s?</string>
+    <string name="dialog_delete_customer_msg_with_tx">%1$s has %2$d recorded transaction(s). Deleting this customer will permanently delete all of their ledger records and update your dashboard totals. This cannot be undone.</string>
+    <string name="btn_delete">Delete</string>
+
+    <!-- Customer Ledger -->
+    <string name="title_customer_ledger">Customer Ledger</string>
+    <string name="label_current_balance">Current Balance</string>
+    <string name="label_total_credit">Total Credit</string>
+    <string name="label_total_payments">Total Payments</string>
+    <string name="label_transactions_history">Transaction History</string>
+    <string name="empty_transactions">No transactions found.</string>
+    <string name="btn_you_gave">You Gave (Credit)</string>
+    <string name="btn_you_got">You Got (Payment)</string>
+    <string name="type_credit_badge">Credit Given</string>
+    <string name="type_payment_badge">Payment Received</string>
+    <string name="desc_edit_customer">Edit customer</string>
+    <string name="desc_delete_customer">Delete customer</string>
+    <string name="desc_call_customer">Call customer</string>
+    <string name="desc_back">Back</string>
+
+    <!-- Add / Edit Transaction -->
+    <string name="title_add_credit">Add Credit</string>
+    <string name="title_add_payment">Add Payment</string>
+    <string name="title_edit_transaction">Edit Transaction</string>
+    <string name="label_amount_rupees">Amount (₹)</string>
+    <string name="label_note_optional">Note (Optional)</string>
+    <string name="label_date_time">Date &amp; Time</string>
+    <string name="label_transaction_type">Transaction Type</string>
+    <string name="btn_save_credit">Save Credit</string>
+    <string name="btn_save_payment">Save Payment</string>
+    <string name="btn_save_changes">Save Changes</string>
+    <string name="btn_delete_transaction">Delete Transaction</string>
+    <string name="error_invalid_amount">Enter a valid amount greater than zero.</string>
+    <string name="error_amount_too_large">Amount is too large.</string>
+    <string name="error_note_too_long">Note must be 300 characters or fewer.</string>
+    <string name="msg_credit_saved">Credit saved.</string>
+    <string name="msg_payment_saved">Payment saved.</string>
+    <string name="msg_transaction_updated">Transaction updated.</string>
+    <string name="msg_transaction_deleted">Transaction deleted.</string>
+    <string name="dialog_advance_title">Advance Payment Warning</string>
+    <string name="dialog_advance_msg">This payment of %1$s exceeds the customer\'s outstanding balance of %2$s and will record an advance payment of %3$s. Continue?</string>
+    <string name="btn_confirm_advance">Confirm Advance Payment</string>
+    <string name="dialog_delete_tx_title">Delete Transaction?</string>
+    <string name="dialog_delete_tx_msg">Deleting this %1$s of %2$s will immediately recalculate the customer\'s balance and dashboard totals.</string>
+    <string name="picker_select_customer">Select Customer</string>
+    <string name="picker_no_customers">Add a customer first before recording a transaction.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_app_info_title">App Information</string>
+    <string name="settings_app_info_desc">Simple Khata is a lightweight personal digital ledger for tracking customer credits, payments, and balances.</string>
+    <string name="settings_sync_status_title">Firebase Sync Status</string>
+    <string name="sync_status_synced">Synced</string>
+    <string name="sync_status_syncing">Syncing…</string>
+    <string name="sync_status_offline">Offline — changes saved locally and will sync when online</string>
+    <string name="sync_status_failed">Sync failed</string>
+    <string name="sync_status_local_only">Local only (Not signed in)</string>
+    <string name="sync_status_local_only_detail">Data is stored on this device only. Sign in with Google below to enable cloud backup.</string>
+    <string name="settings_sync_retry">Retry Sync</string>
+    <string name="settings_account_title">Account &amp; Backup</string>
+    <string name="settings_account_signed_in_as">Signed in as %1$s</string>
+    <string name="settings_account_guest_mode">Guest Mode (Device only)</string>
+    <string name="settings_account_backup_note">Data is backed up to Firebase under your Google account. Reinstalling the app or switching devices restores your ledger automatically when you sign in with this same Google account. If you lose access to this Google account, cloud-stored data cannot be recovered under a different account.</string>
+    <string name="settings_account_guest_note">You are using Simple Khata without an account. Records are stored only on this device and will be lost if you uninstall the app or clear app data. Sign in with Google to back up and sync your existing records.</string>
+    <string name="settings_sign_in_google">Sign in with Google</string>
+    <string name="settings_sign_out">Sign Out</string>
+    <string name="dialog_sign_out_title">Sign Out?</string>
+    <string name="dialog_sign_out_msg">Your records remain safely backed up in your Firebase account.</string>
+    <string name="settings_dark_mode_title">Dark Mode</string>
+    <string name="settings_dark_mode_subtitle">Switch between light and dark appearance</string>
+    <string name="settings_privacy_title">Privacy Policy</string>
+    <string name="settings_privacy_subtitle">How your ledger data is stored</string>
+    <string name="privacy_policy_body">Simple Khata stores your customer names, optional phone numbers, and transaction entries privately in Google Firebase Cloud Firestore scoped strictly to your authenticated Google User ID.\n\nNo customer accounts, advertising trackers, or third-party data sharing are used. Offline caching keeps a local encrypted-by-OS copy on your device so the app works without internet and syncs when reconnected.</string>
+    <string name="settings_version_title">App Version</string>
+    <string name="settings_version_format">Version %1$s (Build %2$d)</string>
+    <string name="offline_banner_text">You are offline. Changes are saved locally and will sync automatically.</string>
+</resources>

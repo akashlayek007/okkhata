@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_green">#22C57E</color>
+    <color name="primary_green_dark">#16A36A</color>
+    <color name="primary_green_soft">#132B21</color>
+    <color name="background_page">#111315</color>
+    <color name="card_background">#1B1E22</color>
+    <color name="surface_subtle">#252A30</color>
+    <color name="text_primary">#F1F3F5</color>
+    <color name="text_secondary">#A0A6AD</color>
+    <color name="positive_amount">#22C57E</color>
+    <color name="positive_soft">#132B21</color>
+    <color name="negative_amount">#F06A6A</color>
+    <color name="negative_soft">#331B1B</color>
+    <color name="border_subtle">#2B3036</color>
+    <color name="warning_amber">#F59E0B</color>
+    <color name="warning_soft">#2E2411</color>
+</resources>
